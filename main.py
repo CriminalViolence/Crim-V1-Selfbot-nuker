@@ -14,14 +14,12 @@ TNO.remove_command('help')
 @TNO.event
 async def on_connect():
     print(f'''{Fore.RED}
- _____               
-|_   _|              
-  | |   _ __    ___  
-  | |  | '_ \  / _ \ 
-  | |  | | | || (_) |
-  \_/  |_| |_| \___/
-                     
-                            
+  _____               
+ dP""b8 88""Yb 88 8b    d8   Yb    dP   .d 
+dP   `" 88__dP 88 88b  d88    Yb  dP  .d88 
+Yb      88"Yb  88 88YbdP88     YbdP     88 
+ YboodP 88  Yb 88 88 YY 88      YP      88 
+      
            {Fore.WHITE}CRIM V1 NUKER HAS STARTED                            
             {Fore.WHITE}[+] Made by Criminal Violence
               {Fore.WHITE}_________________    
